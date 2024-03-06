@@ -1,0 +1,381 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Sixtyfour&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Righteous&family=Sixtyfour&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
+* {
+	margin: 0;
+	padding: 0px;
+	list-style: none;
+	font-family: "맑은 고딕";
+	/* color: #333; */
+}
+a {
+	text-decoration: none;
+	display: block;
+}
+body {
+	width: 100vw;
+	height: 120vh;
+	background-color: #fff;
+	position: relative;
+}
+/* 본문 부분 */
+.bodywrap {
+	position: absolute;
+	float: left;
+	width: 100%;
+	height: 100%;
+	/* background-color: red; */
+}
+
+/* 이미지 슬라이드 부분 */
+.slideshort {
+	position: absolute;
+	float: left;
+	width: 100%;
+	height: 100%;
+
+	/* background-color: aqua; */
+}
+
+.imgslide {
+	position: absolute;
+	float: left;
+	width: 100%;
+	height: 100%;
+
+	/* background-color: gold; */
+}
+
+.imgslide img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+
+	overflow: hidden;
+}
+
+/* header 부분 */
+header {
+	width: 100%;
+	height: 10vh;
+
+	/* background: linear-gradient(to right, red blue); */
+	/* background: linear-gradient(to bottom, #020202 , white); */
+	border-bottom:2px solid #FFF;
+	position: absolute;
+	opacity: 1;
+}
+
+.logo {
+	width: 80px;
+	height: 80px;
+	left: 60px;
+	top: -13px;
+	position: absolute;
+	display: block;
+	border-radius: 50%;
+	background: #fff;
+	margin-top: 20px;
+
+	/* background-color: blue; */
+}
+
+.logo img {
+	width: 78px;
+	position: absolute;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.menu {
+	float: right;
+	margin-right: 165px;
+	width: 20%;
+	height: 40px;
+
+	/* background-color: rgb(23, 47, 84); */
+}
+
+.navi {
+	display: flex;
+}
+
+.navi > li:nth-of-type(1) {
+	width: 130px;
+	height: 40px;
+	margin-right: 100px;
+z-index: 2;
+	margin-top: 25px;
+	background-color: #fff;
+	opacity: 1;
+	border-radius: 5px;
+}
+.navi > li:nth-of-type(2) {
+	width: 130px;
+	height: 40px;
+	margin-right: 100px;
+z-index: 2;
+	margin-top: 25px;
+	background-color: #fff;
+	opacity: 1;
+	border-radius: 5px;
+}
+
+.navi > li > a {
+	height: 40px;
+	line-height: 40px;
+	font-family: Dongle;
+	text-align: center;
+z-index: 2;
+	font-size: 30px;
+	color: #000;
+	opacity: 1;
+}
+
+.navi > li:hover {
+	opacity: 0.7;
+}
+
+.navi > li > a:hover {
+	opacity: 0.7;
+}
+/* TITLE */
+.title {
+	position: absolute;
+	top: 13%;
+	display: block;
+	text-align: center;
+	right: 42%;
+	color: #fff;
+	font-weight: bold;
+	/* background-color: blue; */
+}
+.title span {
+	font-size: 50px;
+	font-family: Righteous;
+	font-weight: 400px;
+	text-align: center;
+}
+.title span:nth-of-type(1) {
+	font-size: 70px;
+}
+.title span:nth-of-type(3) {
+	font-size: 70px;
+}
+.mainlogo {
+	position: absolute;
+	top: 12%;
+	display: block;
+	left: 58%;
+}
+.mainlogo img {
+	position: absolute;
+	/* display: block;
+	border-radius: 50%;
+	background-color: #fff; */
+	width: 200px;
+	height: 200px;
+}
+
+/*  메뉴 */
+.tab {
+	position: fixed;
+	float: left;
+	left: 10vw;
+	margin-top: 500px;
+	width: 100%;
+	height: 250px;
+	z-index: 3;
+	/* background-color: #eee; */
+}
+.gallery {
+	width: 100%;
+	height: 250px;
+}
+
+.gallery div {
+	position: absolute;
+	display: flex;
+	margin-left: -120px;
+	margin-top: -50px;
+	z-index: 4;
+}
+
+.gallery a {
+	margin: auto 80px;
+}
+.gallery img {
+	/* position: absolute; */
+	float: left;
+	width: 250px;
+	height: 250px;
+}
+.gallery a:hover {
+	opacity: 0.6;
+}
+.gallery span {
+	position: absolute;
+	display: flex;
+	width: 86%;
+	margin-top: 18px;
+	margin-left: -40px;
+	/* display: block; */
+	/* 
+   background-color: blue;  */
+}
+.gallery > span > ul {
+	cursor: pointer;
+	width: 100%;
+	margin-left: -30px;
+	margin-right: -60px;
+	height: 100%;
+
+	/* background-color: blueviolet; */
+	/* display: none; */
+	/* border-radius: 10%;
+ */
+}
+.gallery > span > ul > a {
+	display: flex;
+	margin-left: 300px;
+
+}
+
+.gallery > span > ul > a > li > i {
+	color: #00dfa2;
+}
+
+.gallery > span > ul > a > li {
+	z-index: 6;
+	margin-left: 15px;
+	margin-right: -5px;
+	padding: 0px 5px 0px 5px;
+	
+	color: #fff;
+	font-family: Dongle;
+	border-radius: 5px;
+	font-size: 24px;
+	background-color: #0079ff;
+	transition:  2.5s;
+	display: none;
+}
+
+/* 애니메이션 효과 */
+section {
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 10vh;
+	top: 70%;
+	/* background-color: aqua; */
+	z-index: 2;
+	animation: day linear 10s infinite;
+}
+
+section .girl {
+	position: absolute;
+	left: 0%;
+	margin-top: -70px;
+	animation: flow linear 9s infinite;
+}
+section .couple {
+	position: absolute;
+	top: 10px;
+	left: 0%;
+	margin-top: -80px;
+	animation: flow linear 25s infinite;
+}
+
+@keyframes day {
+	0% {
+		opacity: 0.4;
+	}
+	25% {
+		opacity: 0.8;
+	}
+	50% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 0.4;
+	}
+}
+@keyframes flow {
+	0% {
+		left: 0%;
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+	}
+
+	100% {
+		left: 90%;
+		opacity: 0;
+	}
+}
+
+/*footer */
+footer {
+	position: absolute;
+	display: flex;
+	float: left;
+	width: 100%;
+	height: 90px;
+	bottom: 0px;
+	background-color: #fff;
+	opacity: 0.6;
+}
+.footermenu {
+	float: left;
+
+	width: 100%;
+	height: 90px;
+	/* border-left: 1px solid #3fd6ff; */
+	/* border-right: 1px solid #3fd6ff; */
+	/* background-color: #333; */
+}
+
+.footermenu ul img {
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	margin-left: 145px;
+}
+.footermenu ol {
+	position: absolute;
+	width: calc(100% - 500px);
+
+	display: block;
+	/* border-top: 1px solid #3fd6ff; */
+	padding-top: 10px;
+	/* padding: 100px auto; */
+}
+
+.footermenu ol li {
+	margin-left: 550px;
+}
+.family {
+	float: right;
+	width: 250px;
+	height: 90px;
+	/* background-color: cornflowerblue; */
+}
+.family select {
+	position: absolute;
+	/* top: 40px; */
+	margin-top: 30px;
+	right: 200px;
+	/* margin-left: 20px; */
+	width: 200px;
+	height: 30px;
+}
